@@ -1,0 +1,107 @@
+body {
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+h3 {
+  background-color: rgba(14, 14, 14, 0.3);
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+.form-container {
+  max-width: 400px;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-container label {
+  font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-container input[type="date"] {
+  background-color: rgba(14, 14, 14, 0.3);
+  padding: 9px;
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  font-size: 12px;
+  width: 95%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-color: #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.form-container button {
+  background-color: rgba(14, 14, 14, 0.3);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.form-container button:hover {
+  background-color: rgba(14, 14, 14, 0.3);
+
+}
+
+.video-background {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  /* Set the desired height of the video background */
+}
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Scale the video to cover the entire background */
+}
+
+.video-background .content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Place the content above the video */
+  padding: 20px;
+  color: #fff;
+}
+
+.glass-effect-bg {
+  backdrop-filter: blur(10px);
+  /* Adjust the blur radius as desired */
+  background-color: rgba(14, 14, 14, 0.255);
+  /* Adjust the opacity as desired */
+}
